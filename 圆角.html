@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>border-radius</title>
+<style type="text/css">
+div.circle{
+    height:100px;/*与width设置一致*/
+    width:100px;
+    background:#9da;
+    border-radius:50px;/*四个圆角值都设置为宽度或高度值的一半*/
+    }
+/*任务部分*/   
+div.semi-circle{ 
+    height:50px;
+    width:100px;
+    background:#9da;
+    border-radius:50px 50px 0 0;/* 四个半径值分别是左上角、右上角、右下角和左下角，顺时针 */ 
+    }
+div.b-circle{ 
+    height:50px;
+    width:100px;
+    background:#9da;
+    border-radius:0 0 50px 50px;
+    }  
+    div.l-circle{ 
+    height:100px;
+    width:50px;
+    background:#9da;
+    border-radius:50px 0 0 50px;
+    }
+    div.r-circle{ 
+    height:100px;
+    width:50px;
+    background:#9da;
+    border-radius:0 50px 50px 0;
+    }
+    div.yezi{ 
+    height:50px;
+    width:100px;
+    background:#9da;
+    border-radius:50px 0 50px 0;
+    }
+    div.yezi2{ 
+    height:100px;
+    width:50px;
+    background:#9da;
+    border-radius:50px 0 50px 0;
+    }
+</style>
+</head>
+<body>
+<div class="circle">
+</div>
+<br/>
+<!--任务部分-->
+<div class="semi-circle">
+</div>
+</br>
+<div class="b-circle"></div>
+</br>
+<div class="l-circle"></div>
+</br>
+<div class="r-circle"></div>
+</br>
+<div class="yezi"></div>
+</br>
+<div class="yezi2"></div>
+</body>
+</html>
