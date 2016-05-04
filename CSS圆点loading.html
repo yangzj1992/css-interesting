@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<style type="text/css" media="screen">
+  .fullloader{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44px;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+  }
+  .spinner {
+    margin: 50% auto;
+    width: 150px;
+    text-align: center;
+  }
+  .spinner > div {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 0.8s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+  }
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+  }
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+  }
+  @-webkit-keyframes bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0.0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  @keyframes bouncedelay {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0.0);
+    } 40% {
+      -webkit-transform: scale(1.0);
+    }
+  }
+</style>
+<body>
+  <div class="fullloader">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+</body>
+</html>
